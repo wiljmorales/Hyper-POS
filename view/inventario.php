@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inventario</title>
   <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/inventario.css">
 </head>
 
 <body>
 
-  <header>
-    <img src="img/LOGO DE KAIROS.png" alt="logo Kairos">
-    <h1>Inventario</h1>
+  <header class="header">
+    <img src="img/LOGO DE KAIROS.png" alt="logo Kairos" class="header-img">
+    <h1 class="header-title">Inventario</h1>
+    <div class="header-menu">Menu</div>
   </header>
   <section class="menu-inventario">
     <div class="search-container">
@@ -33,7 +35,7 @@
   </section>
 
   <section class="table-container">
-    <table class="table">
+    <table class="inventario-table">
       <tr class="table-header">
         <th>ID</th>
         <th>Nombre</th>
@@ -42,53 +44,150 @@
         <th>Cantidad</th>
         <th>Total</th>
       </tr>
-      <tr>
-        <td class="table-item">1</td>
-        <td>Chocolate mu sabroso</td>
-        <td>Nacional</td>
-        <td>2 $</td>
-        <td>7</td>
-        <td>14 $</td>
-      </tr>
-      <tr>
-        <td class="table-item">2</td>
-        <td>Queso the concho</td>
-        <td>Vaquera Kairos</td>
-        <td>1.10 $</td>
-        <td>7</td>
-        <td>7.70 $</td>
-      </tr>
-      <tr>
-        <td class="table-item">1</td>
-        <td>Chocolate mu sabroso</td>
-        <td>Nacional</td>
-        <td>2 $</td>
-        <td>7</td>
-        <td>14 $</td>
-      </tr>
-      <tr>
-        <td class="table-item">2</td>
-        <td>Queso the concho</td>
-        <td>Vaquera Kairos</td>
-        <td>1.10 $</td>
-        <td>7</td>
-        <td>7.70 $</td>
-      </tr><tr>
-        <td class="table-item">1</td>
-        <td>Chocolate mu sabroso</td>
-        <td>Nacional</td>
-        <td>2 $</td>
-        <td>7</td>
-        <td>14 $</td>
-      </tr>
-      <tr>
-        <td class="table-item">2</td>
-        <td>Queso the concho</td>
-        <td>Vaquera Kairos</td>
-        <td>1.10 $</td>
-        <td>7</td>
-        <td>7.70 $</td>
-      </tr>
+        <tr>
+          <td>1</td>
+          <td>Chocolate mu sabroso</td>
+          <td>Nacional</td>
+          <td>2 $</td>
+          <td>7</td>
+          <td>14 $</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Queso the concho</td>
+          <td>Vaquera Kairos</td>
+          <td>1.10 $</td>
+          <td>7</td>
+          <td>7.70 $</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Chocolate mu sabroso</td>
+          <td>Nacional</td>
+          <td>2 $</td>
+          <td>7</td>
+          <td>14 $</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Queso the concho</td>
+          <td>Vaquera Kairos</td>
+          <td>1.10 $</td>
+          <td>7</td>
+          <td>7.70 $</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Chocolate mu sabroso</td>
+          <td>Nacional</td>
+          <td>2 $</td>
+          <td>7</td>
+          <td>14 $</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Queso the concho</td>
+          <td>Vaquera Kairos</td>
+          <td>1.10 $</td>
+          <td>7</td>
+          <td>7.70 $</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Chocolate mu sabroso</td>
+          <td>Nacional</td>
+          <td>2 $</td>
+          <td>7</td>
+          <td>14 $</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Queso the concho</td>
+          <td>Vaquera Kairos</td>
+          <td>1.10 $</td>
+          <td>7</td>
+          <td>7.70 $</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Chocolate mu sabroso</td>
+          <td>Nacional</td>
+          <td>2 $</td>
+          <td>7</td>
+          <td>14 $</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Queso the concho</td>
+          <td>Vaquera Kairos</td>
+          <td>1.10 $</td>
+          <td>7</td>
+          <td>7.70 $</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Chocolate mu sabroso</td>
+          <td>Nacional</td>
+          <td>2 $</td>
+          <td>7</td>
+          <td>14 $</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Queso the concho</td>
+          <td>Vaquera Kairos</td>
+          <td>1.10 $</td>
+          <td>7</td>
+          <td>7.70 $</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Chocolate mu sabroso</td>
+          <td>Nacional</td>
+          <td>2 $</td>
+          <td>7</td>
+          <td>14 $</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Queso the concho</td>
+          <td>Vaquera Kairos</td>
+          <td>1.10 $</td>
+          <td>7</td>
+          <td>7.70 $</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Chocolate mu sabroso</td>
+          <td>Nacional</td>
+          <td>2 $</td>
+          <td>7</td>
+          <td>14 $</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Queso the concho</td>
+          <td>Vaquera Kairos</td>
+          <td>1.10 $</td>
+          <td>7</td>
+          <td>7.70 $</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Chocolate mu sabroso</td>
+          <td>Nacional</td>
+          <td>2 $</td>
+          <td>7</td>
+          <td>14 $</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Queso the concho</td>
+          <td>Vaquera Kairos</td>
+          <td>1.10 $</td>
+          <td>7</td>
+          <td>7.70 $</td>
+        </tr>
     </table>
   </section>
 
@@ -96,13 +195,24 @@
     <div class="content-modal">
       <header>
         <a href="#" class="close-modal">X</a>
-        <h2>Buen Trabajo</h2>
+        <h2>Agregar al Inventario</h2>
         <article>
           <form action="" method="POST" id="form-inventario">
             <input type="text" name="producto" id="producto" placeholder="producto">
-            <input type="text" name="cantidad" id="cantidad" placeholder="cantidad"><br>
+            <input type="text" name="precio" id="precio" placeholder="precio">
+            <select name="moneda" id="moneda">
+              <option value="dolares">$</option>
+              <option value="bolivares">BsS</option>
+            </select><br>
+            <input type="text" name="proveedor" id="proveedor" placeholder="proveedor">
+            <input type="text" name="cantidad" id="cantidad" placeholder="cantidad">
+            <select name="medida" id="medida">
+              <option value="peso">peso</option>
+              <option value="litros">litros</option>
+              <option value="unidades">unidades</option>
+            </select><br>
             <button type="submit" name="incluir" id="incluir">Incluir</button>
-            <button type="submit" name="modificar" id="modificar">Modificar</button>
+            <a href="#" class="close-modal-buttom">Cancelar</a>
           </form>
           <?php
           if (isset($datos_enviados)) {
