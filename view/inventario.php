@@ -1,3 +1,10 @@
+<?php 
+
+require_once 'model/Inventario.php';
+
+$inventario = new inventario ();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,161 +41,25 @@
     </div>
   </section>
 
-  <section class="table-container">
-    <table class="inventario-table">
-      <tr class="table-header">
-        <th>ID</th>
-        <th>Producto</th>
-        <th>Proveedor</th>
-        <th>Precio</th>
-        <th>Cantidad</th>
-        <th>Total</th>
-      </tr>
-        <tr>
-          <td>1</td>
-          <td>Chocolate mu sabroso</td>
-          <td>Nacional</td>
-          <td>2 $</td>
-          <td>7</td>
-          <td>14 $</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Queso the concho</td>
-          <td>Vaquera Kairos</td>
-          <td>1.10 $</td>
-          <td>7</td>
-          <td>7.70 $</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Chocolate mu sabroso</td>
-          <td>Nacional</td>
-          <td>2 $</td>
-          <td>7</td>
-          <td>14 $</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Queso the concho</td>
-          <td>Vaquera Kairos</td>
-          <td>1.10 $</td>
-          <td>7</td>
-          <td>7.70 $</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Chocolate mu sabroso</td>
-          <td>Nacional</td>
-          <td>2 $</td>
-          <td>7</td>
-          <td>14 $</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Queso the concho</td>
-          <td>Vaquera Kairos</td>
-          <td>1.10 $</td>
-          <td>7</td>
-          <td>7.70 $</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Chocolate mu sabroso</td>
-          <td>Nacional</td>
-          <td>2 $</td>
-          <td>7</td>
-          <td>14 $</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Queso the concho</td>
-          <td>Vaquera Kairos</td>
-          <td>1.10 $</td>
-          <td>7</td>
-          <td>7.70 $</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Chocolate mu sabroso</td>
-          <td>Nacional</td>
-          <td>2 $</td>
-          <td>7</td>
-          <td>14 $</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Queso the concho</td>
-          <td>Vaquera Kairos</td>
-          <td>1.10 $</td>
-          <td>7</td>
-          <td>7.70 $</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Chocolate mu sabroso</td>
-          <td>Nacional</td>
-          <td>2 $</td>
-          <td>7</td>
-          <td>14 $</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Queso the concho</td>
-          <td>Vaquera Kairos</td>
-          <td>1.10 $</td>
-          <td>7</td>
-          <td>7.70 $</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Chocolate mu sabroso</td>
-          <td>Nacional</td>
-          <td>2 $</td>
-          <td>7</td>
-          <td>14 $</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Queso the concho</td>
-          <td>Vaquera Kairos</td>
-          <td>1.10 $</td>
-          <td>7</td>
-          <td>7.70 $</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Chocolate mu sabroso</td>
-          <td>Nacional</td>
-          <td>2 $</td>
-          <td>7</td>
-          <td>14 $</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Queso the concho</td>
-          <td>Vaquera Kairos</td>
-          <td>1.10 $</td>
-          <td>7</td>
-          <td>7.70 $</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Chocolate mu sabroso</td>
-          <td>Nacional</td>
-          <td>2 $</td>
-          <td>7</td>
-          <td>14 $</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Queso the concho</td>
-          <td>Vaquera Kairos</td>
-          <td>1.10 $</td>
-          <td>7</td>
-          <td>7.70 $</td>
-        </tr>
-    </table>
+  <section class="table-section">
+    <div class="table-container">
+      <table class="inventario-table">
+        <thead>
+          <tr class="table-header">
+            <th>ID</th>
+            <th>Producto</th>
+            <th>Proveedor</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Total</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php echo $inventario->consultar(); ?>
+        </tbody>
+      </table>
+    </div>
   </section>
 
   <div id="modal" class="modal">
