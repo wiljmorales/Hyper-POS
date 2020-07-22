@@ -38,7 +38,7 @@
     <table class="inventario-table">
       <tr class="table-header">
         <th>ID</th>
-        <th>Nombre</th>
+        <th>Producto</th>
         <th>Proveedor</th>
         <th>Precio</th>
         <th>Cantidad</th>

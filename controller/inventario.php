@@ -9,6 +9,11 @@ if (is_file("view/" . $page . ".php")) {
   if(isset($_POST['incluir'])){
     $inventario->producto = $_POST['producto'];
     $inventario->cantidad = $_POST['cantidad'];
+    $inventario->medida = $_POST['medida'];
+    $inventario->precio = $_POST['precio'];
+    $inventario->moneda = $_POST['moneda'];
+    $inventario->proveedor = $_POST['proveedor'];
+
     echo $inventario->incluir();
     $datos_enviados = "USTED DESEA INCLUIR <br/>".$_POST['cantidad']."  ".
     $_POST['producto'];  

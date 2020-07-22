@@ -4,7 +4,12 @@ require_once 'model/Dato.php';
 
 class Inventario extends Dato {
   public $producto;
-  public $cantidad;
+	public $cantidad;
+	public $medida;
+	public $precio;
+	public $moneda;
+	public $proveedor;
+
 
   function incluir(){
     $co = $this->conecta();
@@ -13,13 +18,20 @@ class Inventario extends Dato {
     try {
 				$co->query("Insert into inventario(
 					producto,
-					cantidad
+					cantidad,
+					medida,
+					precio,
+					moneda,
+					proveedor
 					)
 					Values(
 					'$this->producto',
-					'$this->cantidad'
+					'$this->cantidad',
+					'$this->medida',
+					'$this->precio',
+					'$this->moneda',
+					'$this->proveedor'
 					)");
-					return "Registro incluido";
 		} catch(Exception $e) {
 			return $e->getMessage();
 		}   
